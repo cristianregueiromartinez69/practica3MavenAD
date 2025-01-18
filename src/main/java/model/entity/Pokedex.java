@@ -1,15 +1,13 @@
-package model;
+package model.entity;
 
 import com.fasterxml.jackson.annotation.*;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlProperty;
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import jakarta.persistence.*;
-import org.hibernate.annotations.Type;
 
 
 import java.math.BigDecimal;
-import java.util.LinkedHashSet;
 import java.util.Set;
 
 /**
@@ -162,11 +160,11 @@ public class Pokedex {
         this.misc = misc;
     }
 
-    public Set<model.Pokemon> getPokemons() {
+    public Set<Pokemon> getPokemons() {
         return pokemons;
     }
 
-    public void setPokemons(Set<model.Pokemon> pokemons) {
+    public void setPokemons(Set<Pokemon> pokemons) {
         this.pokemons = pokemons;
     }
 

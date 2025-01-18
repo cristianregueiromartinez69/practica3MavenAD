@@ -1,6 +1,6 @@
-package service;
+package service.metodosclases;
 
-import model.Pokedex;
+import model.entity.Pokedex;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

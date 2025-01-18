@@ -1,10 +1,9 @@
-package service;
+package service.crud;
 
 import config.HibernateConfig;
-import model.Adestrador;
-import model.Pokedex;
-import model.Pokemon;
-import org.hibernate.Hibernate;
+import model.entity.Pokemon;
+import model.entity.Pokedex;
+import model.entity.Adestrador;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 

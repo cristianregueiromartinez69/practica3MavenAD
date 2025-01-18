@@ -1,4 +1,4 @@
-package model;
+package model.entity;
 
 
 import com.fasterxml.jackson.annotation.*;
@@ -136,11 +136,11 @@ public class Adestrador {
         this.nacemento = nacemento;
     }
 
-    public Set<model.Pokemon> getPokemons() {
+    public Set<Pokemon> getPokemons() {
         return pokemons;
     }
 
-    public void setPokemons(Set<model.Pokemon> pokemons) {
+    public void setPokemons(Set<Pokemon> pokemons) {
         this.pokemons = pokemons;
     }
 

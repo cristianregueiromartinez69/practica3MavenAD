@@ -1,5 +1,5 @@
-package service;
-import model.Adestrador;
+package service.metodosclases;
+import model.entity.Adestrador;
 
 import java.time.LocalDate;
 import java.util.ArrayList;

@@ -1,8 +1,8 @@
-package service;
+package service.metodosclases;
 
-import model.Adestrador;
-import model.Pokedex;
-import model.Pokemon;
+import model.entity.Adestrador;
+import model.entity.Pokedex;
+import model.entity.Pokemon;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
