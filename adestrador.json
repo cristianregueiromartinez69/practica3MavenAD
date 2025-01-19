@@ -1,47 +1,9 @@
 {
   "adestrador" : [ {
     "nome" : "ash mostaza",
-    "nacemento" : "1990-10-20",
-    "pokemons" : [ {
-      "nome" : "pikachu",
-      "nacemento" : "1990-01-20"
-    }, {
-      "nome" : "steelix",
-      "nacemento" : "2001-07-29"
-    }, {
-      "nome" : "gengar",
-      "nacemento" : "2000-02-12"
-    }, {
-      "nome" : "houndoom",
-      "nacemento" : "2003-10-01"
-    }, {
-      "nome" : "tinkaton",
-      "nacemento" : "2022-08-11"
-    }, {
-      "nome" : "Feraligatr",
-      "nacemento" : "2002-03-07"
-    } ]
+    "nacemento" : "1990-10-20"
   }, {
     "nome" : "tobias",
-    "nacemento" : "2006-05-12",
-    "pokemons" : [ {
-      "nome" : "dragonite",
-      "nacemento" : "1998-06-08"
-    }, {
-      "nome" : "goldengho",
-      "nacemento" : "2022-12-25"
-    }, {
-      "nome" : "gyarados",
-      "nacemento" : "2005-07-07"
-    }, {
-      "nome" : "sneasler",
-      "nacemento" : "2010-04-18"
-    }, {
-      "nome" : "charizard",
-      "nacemento" : "2008-09-09"
-    }, {
-      "nome" : "aerodactyl",
-      "nacemento" : "2017-05-26"
-    } ]
+    "nacemento" : "2006-05-12"
   } ]
 }

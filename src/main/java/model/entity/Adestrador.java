@@ -60,6 +60,7 @@ public class Adestrador {
     @JacksonXmlElementWrapper(localName = "pokemons")
     @JacksonXmlProperty(localName = "pokemon")
     @JsonProperty("pokemons")
+    @JsonIgnore
     private Set<Pokemon> pokemons;
 
 

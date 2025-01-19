@@ -6,6 +6,11 @@ import org.hibernate.boot.MetadataSources;
 import org.hibernate.boot.registry.StandardServiceRegistry;
 import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
 
+/**
+ * Clase de configuración para realizar la session-factory para hacer operaciones crud con hibernate
+ * @author cristian
+ * @version 1.0
+ */
 public class HibernateConfig {
     private static StandardServiceRegistry standardServiceRegistry;
     private static SessionFactory sessionFactory;

@@ -4,7 +4,6 @@ import model.entity.Adestrador;
 import model.entity.Pokemon;
 import model.wrapper.Adestradores;
 import model.wrapper.Pokemons;
-import service.arregloxmljson.ArreglosFicheros;
 import service.crud.Crud;
 import service.ficherosxmljson.WriteReadFilesXmlJson;
 import service.metodosclases.MetodosAdestrador;
@@ -13,6 +12,11 @@ import service.metodosclases.MetodosPokemon;
 
 import java.util.List;
 
+/**
+ * Clase controller con la lógica de la aplicación
+ * @author cristian
+ * @version 1.0
+ */
 public class Controller {
     /**
      * Lógica principal del programa que gestiona la inserción y lectura de datos,
@@ -26,7 +30,6 @@ public class Controller {
         MetodosAdestrador metodosAdestrador = new MetodosAdestrador();
         MetodosPokemon metodosPokemon = new MetodosPokemon();
         WriteReadFilesXmlJson wrdXmlJson = new WriteReadFilesXmlJson();
-        ArreglosFicheros afch = new ArreglosFicheros();
         Crud crud = new Crud();
 
         // Inserta datos iniciales en las bases de datos
@@ -78,13 +81,20 @@ public class Controller {
         Adestradores adestradoresXml = wrdXmlJson.readXmlFileAdestrador();
         List<Adestrador> adestradorXmlList = wrdXmlJson.readListAdestradorXml(adestradoresXml);
 
-        crud.insertar2AdestradoresInAdestrador(afch.insertarAdestradoresDesdeXml(adestradorXmlList));
-        crud.insertar12PokemonsInPokemonDB(afch.insertarPokemonesDesdeXml(adestradorXmlList, crud.getAdestradorFromDB() ,crud.getPokedexFromDB()));
+        /*
+          Insercciones con xml
+         */
+
+        //crud.insertar2AdestradoresInAdestrador(adestradorXmlList);
+        //crud.insertar12PokemonsInPokemonDB(metodosPokemon.getPokemonListFromXmlJson(pokemonXmlList, crud.getPokedexFromDB(), crud.getAdestradorFromDB()));
 
 
+        /*
+          Insercciones con Json
+         */
 
-
-
+        crud.insertar2AdestradoresInAdestrador(adestradorJsonList);
+        crud.insertar12PokemonsInPokemonDB(metodosPokemon.getPokemonListFromXmlJson(pokemonJsonList, crud.getPokedexFromDB(), crud.getAdestradorFromDB()));
 
 
 
